@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>START</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/examples/cover/cover.css">
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+
+    <header class="masthead mb-auto" th:insert="blocks/header :: header"></header>
+
+    <h3>Выбери нужный день недели и группу</h3>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle mt-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Выбор дня
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Понедельник</a>
+            <a class="dropdown-item" href="#">Вторник</a>
+            <a class="dropdown-item" href="#">Среда</a>
+            <a class="dropdown-item" href="#">Четверг</a>
+            <a class="dropdown-item" href="#">Пятница</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle mt-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Выбор группы
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1П1</a>
+            <a class="dropdown-item" href="#">1Р1</a>
+            <a class="dropdown-item" href="#">1СА1</a>
+        </div>
+    </div>
+
+    <a href="/table" class="btn btn-lg btn-secondary mt-5">Показать</a>
+
+    <div class="mastfoot mt-auto" th:insert="blocks/footer :: footer"></div>
+
+</div>
+</body>
+</html>
